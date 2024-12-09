@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url(../../Downloads/panoramic-dark-carbon-fiber-texture-with-highlights-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+#titulo{
+    color:orange;
+    font-size: 100px;
+}
+#Buscador{
+    height: 20px;
+    padding: 9px;
+    border-color: blue;
+}
+h2{
+    font-family: italic;
+    color: gold;
+    font-size: 50px;
+}
+h3{
+    color: white;
+}
+#Countach{
+    color:white;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#Descripcion{
+    font-style: italic;
+    font-size: 30px;
+    color:blue;
+}
+#Ficha{
+    padding: 12px;
+    margin: 20px;
+    border: solid 3px black;
+    background-color: gold;
+    font-style: normal;
+    font-size: 30px;
+    color:blue
+
+    
+}
+#Diseñador{
+    font-size: 30px;
+    font-style: italic;
+}
+#Datos{
+    font-size: 30px;
+    font-style: italic;
+    color:white
+}
+#Datoextra{
+    font-size: 30px;
+    font-style: italic;
+    color:white;
+}
+a{
+    font-size: 20px;
+    color:cyan;
+}
+#Testarosa{
+    color:white;
+    font-style: italic;
+    font-size: 30px;
+}
+
+
+#DeLorean{
+    color:white;
+    font-style: italic;
+    font-size: 30px;
+}
+#P1{
+    color: dodgerblue;
+    font-style:initial;
+    font-size: 30px;
+}
+.main__container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main__container div{
+    width: 650px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    margin: 30px 0;
+}
