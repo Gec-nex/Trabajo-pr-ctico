@@ -38,3 +38,48 @@ btnCat.addEventListener('click', loadCatImage);
 
 // Cargar imagen inicial al cargar la página
 document.addEventListener('DOMContentLoaded', loadCatImage);
+
+const correoInput = document.querySelector("#correo");
+const mensaje1Correo = document.querySelector("#mensaje1");
+const contraseñaImput = document.querySelector("#contraseña");
+const mensaje2Contraseña = document.querySelector("#mensaje2");
+
+correoInput.addEventListener('change', () => {
+    if (correoInput.value.includes('@')){
+        mensaje1Correo.textContent = 'Correo válido.';
+        mensaje1Correo.style.color = 'green';
+    }else{
+        mensaje1Correo.textContent = 'Correo inválido.';
+        mensaje1Correo.style.color = 'red'
+    }
+        
+});
+
+contraseñaImput.addEventListener('change', () => {
+    if (contraseñaImput.value.trim().length > 4){
+    mensaje2Contraseña.textContent = 'Clave válida.';
+        mensaje2Contraseña.style.color = 'green';
+    }else{
+        mensaje2Contraseña.textContent = 'Clave inválida, debe tener mas de 4 caracteres.';
+        mensaje2Contraseña.style.color = 'red';
+    }
+});
+
+const formulario = document.querySelector("#Formulario");
+const enviar = document.querySelector("#boton1");
+
+boton1.addEventListener('click', (e) => {
+ e.preventDefault();
+
+ const correoValidar = document.querySelector("#correo").value;
+ const contraseñaValidar = document.querySelector("#contraseña").value;
+ const nombreValidar = document.querySelector("#nombre").value;
+
+ if (correo && contraseña && nombre){
+    mensaje3.textContent = `¡Formulario enviado con exito! bienvenido/a, ${nombre}`;
+    mensaje3.style.color = 'green';
+ }else{
+    mensaje4.textContent = 'Por favor llena los campos vacíos.';
+    mensaje4.style.color = 'red';
+ }
+});

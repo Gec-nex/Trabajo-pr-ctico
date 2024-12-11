@@ -102,3 +102,20 @@ a{
     border-radius: 25px;
     margin: 30px 0;
 }
+#T1{
+    color: white;
+    font-size: 30px;
+}
+#Formulario{
+    background-color: azure;
+    font-size: 25px;
+}
+#boton1{
+    width: 100px;
+   font-size: 20px;
+}
+#boton2{
+    width: 100px;
+    font-size: 20px;
+}
+
